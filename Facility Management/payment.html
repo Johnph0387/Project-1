@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to FMA</title>
+
+    <link rel="icon" href="Images/leaf.jpg" type="image/gif" sizes="16x16">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav nav-pills">
+          <li role="presentation" class="active"><a href="homepage2.html">Tools</a></li>
+          <li role="presentation"><a href="workorder.html">Work Order</a></li>
+          <li role="presentation"><a href="floorplan.html">Floor Plan</a></li>
+          <li role="presentation"><a href="message.html">Message</a></li>
+          <li role="presentation"><a href="payment.html">Payments</a></li>
+          <li role="presentation"><a href="contacts.html">Your Contacts</a></li>
+          <li role="presentation"><a href="index.html" class="signout">Sign Out</a></li>
+        </ul>
+    </nav>
+
+    <div class="jumbotron">
+      <h1 class="text-center">Payments</h1>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+        
+        <!-- You can make it whatever width you want. I'm making it full width
+             on <= small devices and 4/12 page width on >= medium devices -->
+        
+            <div class="col-xs-10 col-sm-12 col-md-12">        
+        
+                <!-- CREDIT CARD FORM STARTS HERE -->
+                <div class="panel panel-default credit-card-box">
+                    <div class="panel-heading display-table" >
+                        <div class="row display-tr" >
+                            <h3 class="panel-title display-td">Payment Details</h3>
+                            <div class="display-td" >                            
+                                <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" id="payment-form" method="POST" action="javascript:void(0);">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label for="cardNumber">CARD NUMBER</label>
+                                        <div class="input-group">
+                                            <input 
+                                                type="tel"
+                                                class="form-control"
+                                                name="cardNumber"
+                                                placeholder="Valid Card Number"
+                                                autocomplete="cc-number"
+                                                required autofocus 
+                                            />
+                                            <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                        </div>
+                                    </div>                            
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                                        <input 
+                                            type="tel" 
+                                            class="form-control" 
+                                            name="cardExpiry"
+                                            placeholder="MM / YY"
+                                            autocomplete="cc-exp"
+                                            required 
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 col-md-5 pull-right">
+                                    <div class="form-group">
+                                        <label for="cardCVC">CV CODE</label>
+                                        <input 
+                                            type="tel" 
+                                            class="form-control"
+                                            name="cardCVC"
+                                            placeholder="CVC"
+                                            autocomplete="cc-csc"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label for="couponCode">COUPON CODE</label>
+                                        <input type="text" class="form-control" name="couponCode" />
+                                    </div>
+                                </div>                        
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <button class="subscribe btn btn-success btn-lg btn-block" type="button">Start Subscription</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <p class="payment-errors"></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/kendo.all.min.js"></script>
+
+    <script type="text/javascript" src="JavaScript/javascript.js"></script>
+
+</body>
+<footer>
+        <!--Footer Links-->
+    <div class="container mt-5 mb-4 text-center text-md-left">
+        <div class="row mt-3">
+            <!--First column-->
+            <div class="col-md-3 col-lg-4 col-xl-3 mb-r">
+                <h6 class="title font-bold"><strong>Facility Managment Application</strong></h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit.</p>
+            </div>
+
+            <!--Third column-->
+            <div class="col-md-3 col-lg-4 col-xl-3 mb-r">
+                <h6 class="title font-bold"><strong>Useful links</strong></h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                <p><a href="login.html">Your Account</a></p>
+                <p><a href="http://www.ifma.org/membership/why-join-ifma">Affiliate</a></p>
+                <p><a href="Plans.html">Shopping Rates</a></p>
+                <p><a href="Support.html">Help</a></p>
+            </div>
+            <!--/.Third column-->
+
+            <!--Fourth column-->
+            <div class="col-md-3 col-lg-4 col-xl-3 mb-r">
+                <h6 class="title font-bold"><strong>Contact</strong></h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                <p><i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+                <p><i class="fa fa-envelope mr-3"></i> info@example.com</p>
+                <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright-->
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            © 2017 Copyright: <a href="#"><strong> #</strong></a>
+        </div>
+    </div>
+</footer>
+</html>
+        

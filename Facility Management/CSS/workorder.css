@@ -1,0 +1,29 @@
+body{
+    background-color: gray;
+
+}
+.nav{
+    font-size: 20px;
+    background-color:lightgrey;
+}
+.form-area
+{
+    background-color: #FAFAFA;
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+	border: 1px solid GREY;
+	}
+.container{
+    padding-left: 14px;
+    margin-left: 322px;
+}
+    footer{
+    border-color: white;
+    border-style: solid;
+    margin-bottom: 0px;
+    padding-bottom: -9px;
+    background-color: lightgray;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 115px;
+}
